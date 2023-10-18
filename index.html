@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Themed Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+.header {
+    background-image: url("");
+    background-size: cover;
+    background-position:inherit;
+    text-align: center;
+    padding:auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+
+}
+.tagline{
+    transition: transform 0.2s;
+}
+.tagline:hover{
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+.biopic{
+    display:flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 5px;
+   
+    margin-top: 2%;
+    box-sizing: content-box;
+    width: auto;
+    border-radius: 1%;
+    transition: background-c0lor 0.3s;
+
+    
+}
+
+   
+.mypic{
+    margin-left: 10%;
+    transition: transform 0.2s;
+    
+}
+.mypic:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 1%;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    transition: transform 0.2s
+}
+
+.cta-button:hover {
+    background-color: #e50914;
+    transform: scale(1.2);
+    z-index: 1;
+
+}
+.about{
+    display: grid;
+    
+    height: 70%;
+    width: 40%;
+    border: #000;
+    border-radius: 2em;
+    background-color: #3f3f3f;
+    margin-top: 2%;
+    margin-left: 5%;
+    position:relative;
+    transition: background-color 0.3s ;
+    transform: 0.2s;
+
+
+}
+
+.about:hover {
+    background-color:#141E46;
+    transform: scale(1.2);
+    z-index: 1;
+}
+.about, .portfolio, .contact {
+    font-size: 1em;
+    padding: 60px;
+    text-align: center;
+
+
+}
+.portfolio{
+    display: grid;
+    background-color: #3f3f3f;
+    width:auto;
+    border: #000;
+    border-radius: 2em;
+    margin-top: 1em;
+    padding: none;
+    transition: background-color 0.3s;
+    transition: transform 0.2s;
+}
+.portfolio:hover{
+    background-color:#141E46 ;
+    transform: scale(1);
+    z-index: 1;
+}
+.education{
+    display: grid;
+    margin-top: 1%;
+    text-align: center;
+}
+.number{
+    margin: 2%;
+    transition: transform 0.2s;
+}
+.number:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}
+.mail{
+    margin-top: 2%;
+    transition: transform 0.2s;
+}
+.mail:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.about h2, .portfolio h2, .contact h2 {
+    font-size: 1.75em;
+    
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+}
+
+.footer p {
+    color: #999;
+}
+
+</style>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img  src="/Users/kishansukhadia/Downloads/Cyberduck.app/Contents/Portfolio Website/images/png-transparent-netflix-logo-thumbnail.png" alt="Netflix Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1 style="color: white;">Welcome to my Portfolio Website</h1>
+            <h4 class="tagline">| > Scripting success in every Byte ;</h4>
+            
+
+            <a href="#portfolio" class="cta-button">View Portfolio</a>
+        </div>
+        <div class="biopic">
+            <img class="mypic" width="600px" src="/Users/kishansukhadia/Downloads/Cyberduck.app/Contents/Portfolio Website/images/E4A96252-6D11-4ED4-A4C3-0373ADB1E28B_1_105_c.jpeg" alt="">
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <div class="bio">
+                    <p>I am an adaptable student equipped with knowledge of conflict resolution, efficient communication and precise decision making. Currently studying Computer Science engineering at McMaster University, I am an enthusiast in the field of software engineering and technology.
+                    Aiming to leverage my abilities and passion for the field to make significant contributions in discovering means to enable technology make our lives easy.</p>
+                </div>
+            </section>
+            
+        </div>
+       
+        
+    </header>
+
+    
+    
+    
+    
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        
+        <div class="education">
+            
+            <h3>Education</h3>
+            <br>
+            <p> B.Sc.Computer Science and Engineering at McMaster University, Hamilton, Canada</p>
+            <br>
+            <h3>Course Content</h3>
+            <br>
+            <p>
+                During my journey at McMaster, I would learn the following: Linear Algebra, Calculus, Logical Reasoning, Discrete Math, Statistics, Functional Programming (Haskell), Web Development (Elm)
+                Programming in Python, C, C#, Java, Shell Scripting, Data Structures and Algorithms. Along with the core subjects, I have
+                also taken electives like Marketing and Fundamentals of Intellectual Property for my first year.
+            </p>
+            <br>
+            <h3>Hobbies</h3>
+            <br>
+            <p>I am an ardent fan of music, poetrty, dancing, reading books and cricket. I also like to keep my self in shape. I believe 
+                that dedicated fitness training helps us in every aspect of life; improving our focus, discipline and mental health.
+               Furthermore, I am also a chess enthusiast. Playing chess daily helps improve critical thinking, problem solving and
+               logical reasoning.
+            </p>
+            <br>
+            <h3>Co-curriculars and Voluteering</h3>
+            <br>
+            <p>
+                Part of RaasMarauders (2023-24). RaasMarauders is the official competetive folk dance team at McMaster.
+                Service Activities:
+                Preparation for Social Action: Phase-2 (2018-19) (Bangalore, Karnataka, India)
+                Preparation for Social Action: Phase-1 (2017-18) (Saputara, Gujarat, India)
+                Volunteer for Cleanliness Drive (2018-19) (Panchgani, maharashtra, India)
+                Junior Youth Spiritual Empowerment Program (2016-17) (Hyderabad, Telangana, India)
+            </p>
+            <br>
+            <h3>Certifications</h3>
+            <br>
+            <p>Sucessfully Completed Training Program for Web Development Using HTML, CSS, JavaScript (January - April, 2022)</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <!-- Add a contact form or contact details here -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            <div class="number">
+                <a style="color: azure;" href="tel:437-299-8022">437-299-8022</a>
+            </div>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+            <div class="mail">
+                <a href= "mailto:" style="color: azure;"><font style="color: azure;">sukhadid@mcmaster.ca</font></a>
+
+            </div>
+          </svg>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Dattesh</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
